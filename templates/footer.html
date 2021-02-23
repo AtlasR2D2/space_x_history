@@ -1,0 +1,32 @@
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <a href="https://www.spacex.com/" target="_blank"><img src="static/img/space_x_logo.png" alt="" width="200"></a>
+                </span>
+              </a>
+            </li>
+          </ul>
+
+          <p class="copyright text-muted" align="center">Copyright &copy; {{webpage_owner}}'s Website <script type="text/javascript">document.write(new Date().getFullYear());</script></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{{ url_for('static', filename='js/clean-blog.min.js')}}"></script>
+
+</body>
+
+</html>

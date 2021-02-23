@@ -1,0 +1,43 @@
+{% include "header.html" %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('https://wallpaperaccess.com/full/17068.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Space X</h1>
+            <span class="subheading">Recent History.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        {% for entry in space_x_data: %}
+        <div class="post-preview">
+            <h2 class="entry-title">
+              {{entry.title}}
+            </h2>
+            <h4 class="entry-details">
+              {{entry.details}}
+            </h4>
+          </a>
+          <p class="post-meta">Links
+            <a href="{{entry.links.article}}" target="_blank"><img src="static/img/news_logo.png" alt="" width="50"></a> <a href="{{entry.links.wikipedia}}" target="_blank"><img src="static/img/wikipedia_logo.png" alt="" width="50"></a>
+          </p>
+
+        </div>
+        <hr>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <hr>
+
+{% include "footer.html" %}
